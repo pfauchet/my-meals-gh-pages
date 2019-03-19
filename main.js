@@ -96,10 +96,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _meals_meals_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./meals/meals.component */ "./src/app/meals/meals.component.ts");
 /* harmony import */ var _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./homepage/homepage.component */ "./src/app/homepage/homepage.component.ts");
 /* harmony import */ var _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ingredients/ingredients.component */ "./src/app/ingredients/ingredients.component.ts");
-/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
-/* harmony import */ var _project_project_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./project/project.component */ "./src/app/project/project.component.ts");
-/* harmony import */ var _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./recipes/recipes.component */ "./src/app/recipes/recipes.component.ts");
-/* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+/* harmony import */ var _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ingredients-details/ingredients-details.component */ "./src/app/ingredients-details/ingredients-details.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
+/* harmony import */ var _project_project_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./project/project.component */ "./src/app/project/project.component.ts");
+/* harmony import */ var _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./recipes/recipes.component */ "./src/app/recipes/recipes.component.ts");
+/* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+
 
 
 
@@ -115,11 +117,12 @@ var routes = [
     { path: 'administration', component: _administration_administration_component__WEBPACK_IMPORTED_MODULE_3__["AdministrationComponent"] },
     { path: 'home', component: _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__["HomepageComponent"] },
     { path: 'ingredients', component: _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_6__["IngredientsComponent"] },
+    { path: 'ingredients/:id', component: _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_7__["IngredientsDetailsComponent"] },
     { path: 'meals', component: _meals_meals_component__WEBPACK_IMPORTED_MODULE_4__["MealsComponent"] },
-    { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_7__["ProfileComponent"] },
-    { path: 'project', component: _project_project_component__WEBPACK_IMPORTED_MODULE_8__["ProjectComponent"] },
-    { path: 'recipes', component: _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_9__["RecipesComponent"] },
-    { path: 'signin', component: _signin_signin_component__WEBPACK_IMPORTED_MODULE_10__["SigninComponent"] },
+    { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_8__["ProfileComponent"] },
+    { path: 'project', component: _project_project_component__WEBPACK_IMPORTED_MODULE_9__["ProjectComponent"] },
+    { path: 'recipes', component: _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_10__["RecipesComponent"] },
+    { path: 'signin', component: _signin_signin_component__WEBPACK_IMPORTED_MODULE_11__["SigninComponent"] },
     { path: '**', redirectTo: 'home' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -156,7 +159,7 @@ module.exports = ".sidenav-container {\r\n    position: absolute;\r\n    top: 0;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav #sidenav mode=\"side\" [(opened)]=\"opened\" [mode]=\"sidenavMode\">\n    <span><img src=\"assets/images/mac_one.png\" class=\"macone-logo\" (click)=\"opened = !opened\"/></span>\n    <div class=\"menu-row\" (click)=\"opened = !opened\">\n      <a mat-button routerLink=\"/news\">\n      <mat-icon>info</mat-icon>&nbsp;Home Page</a>\n      <a mat-button routerLink=\"/ingredients\">\n        <mat-icon>room_service</mat-icon>&nbsp;My Ingredients</a>\n      <a mat-button routerLink=\"/recipes\">\n        <mat-icon>cake</mat-icon>&nbsp;My Recipes</a>        \n      <a mat-button routerLink=\"/meals\">\n        <mat-icon>calendar_today</mat-icon>&nbsp;My Meals</a>\n      <a mat-button routerLink=\"/profile\">\n        <mat-icon>perm_identity</mat-icon>&nbsp;My Profile</a>\n      <a mat-button routerLink=\"/project\">\n        <mat-icon>explore</mat-icon>&nbsp;The Project</a>        \n      <a mat-button routerLink=\"/administration\">\n        <mat-icon>settings</mat-icon>&nbsp;Administration</a>\n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"accent\">\n      <mat-toolbar-row>\n        <button mat-icon-button (click)=\"opened = !opened\"><mat-icon>menu</mat-icon></button>\n        <span><img src=\"assets/images/my-meals-logo.png\" class=\"logo\"/></span><span>My Meals Application</span>\n        <a class=\"auth-button\" routerLinkActive=\"active\" *ngIf=\"!isAuthenticated\" routerLink=\"signin\">Login</a>\n        <a class=\"auth-button\" (click)=\"onSignOut()\" style=\"cursor:pointer;\" *ngIf=\"isAuthenticated\">Logout</a>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <router-outlet></router-outlet>\n  </mat-sidenav-content>\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav #sidenav mode=\"over\" [(opened)]=\"opened\" >\n    <span><img src=\"assets/images/mac_one.png\" class=\"macone-logo\" (click)=\"opened = !opened\"/></span>\n    <div class=\"menu-row\" (click)=\"opened = !opened\">\n      <a mat-button routerLink=\"/news\">\n        <mat-icon>info</mat-icon>&nbsp;Home Page</a>\n      <a mat-button routerLink=\"/ingredients\">\n        <mat-icon>room_service</mat-icon>&nbsp;My Ingredients</a>\n      <a mat-button routerLink=\"/recipes\">\n        <mat-icon>cake</mat-icon>&nbsp;My Recipes</a>        \n      <a mat-button routerLink=\"/meals\">\n        <mat-icon>calendar_today</mat-icon>&nbsp;My Meals</a>\n      <a mat-button routerLink=\"/profile\">\n        <mat-icon>perm_identity</mat-icon>&nbsp;My Profile</a>\n      <a mat-button routerLink=\"/project\">\n        <mat-icon>explore</mat-icon>&nbsp;The Project</a>        \n      <a mat-button routerLink=\"/administration\">\n        <mat-icon>settings</mat-icon>&nbsp;Administration</a>\n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"accent\">\n      <mat-toolbar-row>\n        <button mat-icon-button (click)=\"opened = !opened\"><mat-icon>menu</mat-icon></button>\n        <span><img src=\"assets/images/my-meals-logo.png\" class=\"logo\"/></span><span>My Meals Application</span>\n        <a class=\"auth-button\" routerLinkActive=\"active\" *ngIf=\"!isAuthenticated\" routerLink=\"signin\">Login</a>\n        <a class=\"auth-button\" (click)=\"onSignOut()\" style=\"cursor:pointer;\" *ngIf=\"isAuthenticated\">Logout</a>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <router-outlet></router-outlet>\n  </mat-sidenav-content>\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -179,7 +182,6 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent(router) {
         this.router = router;
-        this.sidenavMode = "over";
         this.shouldRun = true;
         this.opened = false;
         console.log("AppComponent: constructor");
@@ -231,6 +233,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
 /* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
 /* harmony import */ var _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/open-food-facts.service */ "./src/app/services/open-food-facts.service.ts");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ingredients-details/ingredients-details.component */ "./src/app/ingredients-details/ingredients-details.component.ts");
+
+
 
 
 
@@ -263,13 +269,15 @@ var AppModule = /** @class */ (function () {
                 _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_13__["IngredientsComponent"],
                 _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_14__["RecipesComponent"],
                 _profile_profile_component__WEBPACK_IMPORTED_MODULE_15__["ProfileComponent"],
-                _signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"]
+                _signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"],
+                _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_19__["IngredientsDetailsComponent"]
             ],
             imports: [
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_18__["FlexLayoutModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCheckboxModule"],
@@ -280,7 +288,9 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatFormFieldModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatListModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTableModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatPaginatorModule"]
             ],
             providers: [
                 _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_17__["OpenFoodFactsService"]
@@ -351,6 +361,62 @@ var HomepageComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/ingredients-details/ingredients-details.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/ingredients-details/ingredients-details.component.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2luZ3JlZGllbnRzLWRldGFpbHMvaW5ncmVkaWVudHMtZGV0YWlscy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/ingredients-details/ingredients-details.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/ingredients-details/ingredients-details.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  ingredients-details works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/ingredients-details/ingredients-details.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/ingredients-details/ingredients-details.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: IngredientsDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IngredientsDetailsComponent", function() { return IngredientsDetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var IngredientsDetailsComponent = /** @class */ (function () {
+    function IngredientsDetailsComponent() {
+    }
+    IngredientsDetailsComponent.prototype.ngOnInit = function () {
+    };
+    IngredientsDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-ingredients-details',
+            template: __webpack_require__(/*! ./ingredients-details.component.html */ "./src/app/ingredients-details/ingredients-details.component.html"),
+            styles: [__webpack_require__(/*! ./ingredients-details.component.css */ "./src/app/ingredients-details/ingredients-details.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], IngredientsDetailsComponent);
+    return IngredientsDetailsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/ingredients/ingredients.component.css":
 /*!*******************************************************!*\
   !*** ./src/app/ingredients/ingredients.component.css ***!
@@ -358,7 +424,7 @@ var HomepageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "h1 {\r\n    width: 95%;\r\n    margin: auto;\r\n    margin-top : 10px;\r\n    margin-bottom: 10px;\r\n    font-family: Noto, \"Helvetica Neue\", sans-serif;\r\n}\r\n\r\na {\r\n    color: white\r\n}\r\n\r\n.page-element {\r\n    margin-bottom:10px;\r\n    margin-top: auto;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    width: 95%;\r\n}\r\n\r\n.reservation-list {\r\n    margin: auto;\r\n    width: 95%;\r\n}\r\n\r\n.product-details {\r\n    margin-top: 10px;\r\n}\r\n\r\n.item-image {\r\n    width: 300px;\r\n}\r\n\r\n.favorite-button {\r\n    position: absolute;\r\n    right:15px;\r\n    top: 15px;\r\n}\r\n\r\n#main-menu{\r\n    position: absolute;\r\n    right:30px;\r\n    bottom:30px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaW5ncmVkaWVudHMvaW5ncmVkaWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7SUFDVixZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQiwrQ0FBK0M7QUFDbkQ7O0FBRUE7SUFDSTtBQUNKOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLFlBQVk7SUFDWixVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixTQUFTO0FBQ2I7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsVUFBVTtJQUNWLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2luZ3JlZGllbnRzL2luZ3JlZGllbnRzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoMSB7XHJcbiAgICB3aWR0aDogOTUlO1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgbWFyZ2luLXRvcCA6IDEwcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IE5vdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuYSB7XHJcbiAgICBjb2xvcjogd2hpdGVcclxufVxyXG5cclxuLnBhZ2UtZWxlbWVudCB7XHJcbiAgICBtYXJnaW4tYm90dG9tOjEwcHg7XHJcbiAgICBtYXJnaW4tdG9wOiBhdXRvO1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgICB3aWR0aDogOTUlO1xyXG59XHJcblxyXG4ucmVzZXJ2YXRpb24tbGlzdCB7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICB3aWR0aDogOTUlO1xyXG59XHJcblxyXG4ucHJvZHVjdC1kZXRhaWxzIHtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbn1cclxuXHJcbi5pdGVtLWltYWdlIHtcclxuICAgIHdpZHRoOiAzMDBweDtcclxufVxyXG5cclxuLmZhdm9yaXRlLWJ1dHRvbiB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDoxNXB4O1xyXG4gICAgdG9wOiAxNXB4O1xyXG59XHJcblxyXG4jbWFpbi1tZW51e1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgcmlnaHQ6MzBweDtcclxuICAgIGJvdHRvbTozMHB4O1xyXG59XHJcbiJdfQ== */"
+module.exports = "h1 {\r\n    width: 95%;\r\n    margin: auto;\r\n    margin-top : 10px;\r\n    margin-bottom: 10px;\r\n    font-family: Noto, \"Helvetica Neue\", sans-serif;\r\n}\r\n\r\na {\r\n    color: white\r\n}\r\n\r\n.page-element {\r\n    margin-bottom:10px;\r\n    margin-top: auto;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    width: 95%;\r\n}\r\n\r\n.product-details {\r\n    margin-top: 10px;\r\n}\r\n\r\n.item-image {\r\n    width: 300px;\r\n}\r\n\r\n.blurry-overlay {\r\n    position: fixed;\r\n    left: 0;\r\n    top: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #fff;\r\n    opacity: 0.2;\r\n    z-index: 1;\r\n}\r\n\r\n.ingredient-details {\r\n    position: fixed;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    left: 0;\r\n    right: 0;\r\n    top: 60px;\r\n    width: 40%;\r\n    z-index: 2;\r\n}\r\n\r\n.search-actions {\r\n    margin-left: 10px;\r\n}\r\n\r\n.nav-bar {\r\n    margin-top: 10px;\r\n}\r\n\r\n#back-button {\r\n    position: fixed;\r\n    right:30px;\r\n    bottom:30px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaW5ncmVkaWVudHMvaW5ncmVkaWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7SUFDVixZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQiwrQ0FBK0M7QUFDbkQ7O0FBRUE7SUFDSTtBQUNKOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLFVBQVU7QUFDZDs7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsT0FBTztJQUNQLE1BQU07SUFDTixXQUFXO0lBQ1gsWUFBWTtJQUNaLHNCQUFzQjtJQUN0QixZQUFZO0lBQ1osVUFBVTtBQUNkOztBQUVBO0lBQ0ksZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsT0FBTztJQUNQLFFBQVE7SUFDUixTQUFTO0lBQ1QsVUFBVTtJQUNWLFVBQVU7QUFDZDs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvaW5ncmVkaWVudHMvaW5ncmVkaWVudHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxIHtcclxuICAgIHdpZHRoOiA5NSU7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICBtYXJnaW4tdG9wIDogMTBweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbiAgICBmb250LWZhbWlseTogTm90bywgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG5hIHtcclxuICAgIGNvbG9yOiB3aGl0ZVxyXG59XHJcblxyXG4ucGFnZS1lbGVtZW50IHtcclxuICAgIG1hcmdpbi1ib3R0b206MTBweDtcclxuICAgIG1hcmdpbi10b3A6IGF1dG87XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIHdpZHRoOiA5NSU7XHJcbn1cclxuLnByb2R1Y3QtZGV0YWlscyB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG59XHJcblxyXG4uaXRlbS1pbWFnZSB7XHJcbiAgICB3aWR0aDogMzAwcHg7XHJcbn1cclxuXHJcbi5ibHVycnktb3ZlcmxheSB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xyXG4gICAgb3BhY2l0eTogMC4yO1xyXG4gICAgei1pbmRleDogMTtcclxufVxyXG5cclxuLmluZ3JlZGllbnQtZGV0YWlscyB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgIGxlZnQ6IDA7XHJcbiAgICByaWdodDogMDtcclxuICAgIHRvcDogNjBweDtcclxuICAgIHdpZHRoOiA0MCU7XHJcbiAgICB6LWluZGV4OiAyO1xyXG59XHJcblxyXG4uc2VhcmNoLWFjdGlvbnMge1xyXG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XHJcbn1cclxuXHJcbi5uYXYtYmFyIHtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbn1cclxuXHJcbiNiYWNrLWJ1dHRvbiB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICByaWdodDozMHB4O1xyXG4gICAgYm90dG9tOjMwcHg7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -369,7 +435,7 @@ module.exports = "h1 {\r\n    width: 95%;\r\n    margin: auto;\r\n    margin-top
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\n\tSearch for an ingredient\n</h1>\n\n<div class='page-element'>\n  <mat-card class=\"search-form\">\n  \t<form role=\"form\">\n      <mat-list>\n        <mat-list-item>\n    \t  <mat-icon mat-list-icon>search</mat-icon>\n          <p mat-line>\n            <mat-form-field>\n              <input matInput id=\"searchName\" required maxlengtd=\"100\" class=\"form-control\" [(ngModel)]=\"name\" [ngModelOptions]=\"{standalone: true}\">\n            </mat-form-field>\n          </p>\n        </mat-list-item>\n        <mat-list-item>\n        \t<button mat-raised-button color=\"primary\" (click)=\"onSearchItem()\">Search Item</button>\n        </mat-list-item>\n      </mat-list>\n\t</form>\n  </mat-card>\n\n  <mat-card class='product-details' *ngFor=\"let product of products\">\n    <h3>{{ product.product_name }}</h3>\n    <mat-icon mat-list-icon class='favorite-button' id='{{ product.code }}' (click)=\"onAddFavorite($event)\">star</mat-icon>\n    <img src='{{ product.image_url }}' class='item-image'>\n    <h4>Nutritional values per 100g</h4>\n    <table>\n      <tr>\n        <td>Protein (g)</td>\n        <td>Carbs (g)</td>\n        <td>Fat (g)</td>\n        <td>Energy (kcal)</td>\n      </tr>\n      <tr>\n        <td><i>{{ product.nutriments.proteins_100g }}</i></td>\n        <td><i>{{ product.nutriments.carbohydrates_100g }}</i></td>\n        <td><i>{{ product.nutriments.fat_100g }}</i></td>\n        <td><i>{{ product.nutriments.energy_value }}</i></td>\n      </tr>\n    </table>\n    <br>\n    <i>\n      More details on <a href='{{ product.url }}' target=\"_blank\">Open Food Facts.</a>\n    </i>\n  </mat-card>\n\n\n</div>\n\n<div id=\"main-menu\">\n  <div id=\"main-button\">\n    <button mat-fab color=\"primary\" (click)=\"openMenu = !openMenu\" >\n      <mat-icon>keyboard_arrow_up</mat-icon>\n    </button>\n  </div>\n</div>"
+module.exports = "<h1>\r\n\tSearch for an ingredient\r\n</h1>\r\n\r\n<div class='page-element'>\r\n  <mat-card class=\"search-form\">\r\n  \t<form role=\"form\">\r\n      <mat-list>\r\n        <mat-list-item>\r\n    \t  <mat-icon mat-list-icon>search</mat-icon>\r\n          <p mat-line>\r\n            <mat-form-field>\r\n              <input matInput id=\"searchName\" required maxlengtd=\"100\" class=\"form-control\" [(ngModel)]=\"name\" [ngModelOptions]=\"{standalone: true}\">\r\n            </mat-form-field>\r\n          </p>\r\n        </mat-list-item>\r\n      </mat-list>\r\n      <mat-card-actions class=\"search-actions\">\r\n        <button mat-raised-button color=\"primary\" (click)=\"onSearchItem()\">Search Item</button>\r\n        <button mat-raised-button color=\"primary\" (click)=\"onClearResults()\">Clear</button>\r\n      </mat-card-actions>\r\n\t  </form>\r\n  </mat-card>\r\n\r\n  <div fxLayout=\"row wrap\" fxLayoutGap=\"10px\" fxLayoutAlign=\"flex-start\" class=\"products-list\" *ngIf=(products)>\r\n    <mat-card fxFlex=\"0 1 calc(33.3% - 10px)\" class='product-details' *ngFor=\"let product of products\">\r\n      <mat-card-title-group>\r\n        <mat-card-title>\r\n          {{ product.product_name }}  <span *ngIf=\"product.quantity\"> - {{ product.quantity }} </span>\r\n        </mat-card-title>\r\n        <mat-card-subtitle>\r\n          {{ product.brands }}\r\n        </mat-card-subtitle>\r\n        <img *ngIf=\"product.image_url\" mat-card-sm-image src='{{ product.image_url }}'>\r\n      </mat-card-title-group>\r\n      \r\n      <mat-card-content>\r\n        <h4>Nutritional values per 100g</h4>\r\n        <table>\r\n          <tr>\r\n            <td>Protein (g)</td>\r\n            <td>Carbs (g)</td>\r\n            <td>Fat (g)</td>\r\n            <td>Energy (kcal)</td>\r\n          </tr>\r\n          <tr>\r\n            <td><i>{{ product.nutriments.proteins_100g }}</i></td>\r\n            <td><i>{{ product.nutriments.carbohydrates_100g }}</i></td>\r\n            <td><i>{{ product.nutriments.fat_100g }}</i></td>\r\n            <td><i>{{ product.nutriments.energy_value }}</i></td>\r\n          </tr>\r\n        </table>\r\n        <br>\r\n        <i>\r\n          More details on <a href='{{ product.url }}' target=\"_blank\">Open Food Facts.</a>\r\n        </i>\r\n      </mat-card-content>\r\n      <mat-card-actions>\r\n        <button mat-raised-button color=\"primary\" (click)=\"onAddFavorite(product.code)\">Favorite</button>\r\n        <button mat-raised-button color=\"primary\" (click)=\"onDisplayDetails(product)\">Details</button>\r\n      </mat-card-actions>\r\n    </mat-card>\r\n  </div>\r\n\r\n  <mat-card class=\"nav-bar\" *ngIf=(products)>\r\n    <mat-paginator [length]=\"totalResults\"\r\n              [pageSize]=\"pageSize\"\r\n              [pageSizeOptions]=\"pageSizeOptions\"\r\n              (page)=\"onNewPage($event)\">\r\n    </mat-paginator>\r\n  </mat-card>\r\n</div>\r\n\r\n<div class=\"blurry-overlay\" *ngIf='showDetails' (click)=\"onHideDetails()\"></div>\r\n\r\n<div class='ingredient-details' *ngIf='showDetails'>\r\n  <mat-card>\r\n    <mat-card-title-group>\r\n      <mat-card-title>\r\n        {{ productName }}  <span *ngIf=\"productQuantity\"> - {{ productQuantity }} </span>\r\n      </mat-card-title>\r\n      <mat-card-subtitle>\r\n        {{ productBrands }}\r\n      </mat-card-subtitle>\r\n      <img *ngIf=\"productImageUrl\" mat-card-lg-image src='{{ productImageUrl }}'>\r\n    </mat-card-title-group>\r\n    \r\n    <mat-card-content>\r\n      <h4>Nutritional values per 100g</h4>\r\n      <table>\r\n        <tr>\r\n          <td>Protein (g)</td>\r\n          <td>Carbs (g)</td>\r\n          <td>Fat (g)</td>\r\n          <td>Energy (kcal)</td>\r\n        </tr>\r\n        <tr>\r\n          <td><i>{{ productProteins100g }}</i></td>\r\n          <td><i>{{ productCarbohydrates100g }}</i></td>\r\n          <td><i>{{ productFat100g }}</i></td>\r\n          <td><i>{{ productEnergyValue }}</i></td>\r\n        </tr>\r\n      </table>\r\n      <br>\r\n      <i>\r\n        More details on <a href='{{ productUrl }}' target=\"_blank\">Open Food Facts.</a>\r\n      </i>\r\n    </mat-card-content>\r\n    <mat-card-actions>\r\n        <button mat-raised-button color=\"primary\" (click)=\"onAddFavorite(productCode)\">Favorite</button>\r\n        <button mat-raised-button color=\"primary\" (click)=\"onHideDetails()\">Back</button>\r\n      </mat-card-actions>\r\n  </mat-card>\r\n</div>"
 
 /***/ }),
 
@@ -386,29 +452,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/open-food-facts.service */ "./src/app/services/open-food-facts.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 var IngredientsComponent = /** @class */ (function () {
-    function IngredientsComponent(openFoodFactsService) {
+    function IngredientsComponent(openFoodFactsService, router) {
         this.openFoodFactsService = openFoodFactsService;
+        this.router = router;
         this.products = null;
+        this.showDetails = false;
     }
     IngredientsComponent.prototype.ngOnInit = function () {
     };
     IngredientsComponent.prototype.onSearchItem = function () {
         var _this = this;
         console.log("Searching Item : " + this.name);
-        this.openFoodFactsService.searchItems(this.name, function (data) {
+        this.openFoodFactsService.searchItems(this.name, 1, function (data) {
             console.log(data);
             _this.products = data.products;
+            _this.pageSize = data.page_size;
+            _this.currentPage = data.page;
+            _this.totalResults = data.count;
         });
     };
-    IngredientsComponent.prototype.onAddFavorite = function (event) {
-        var target = event.target || event.srcElement || event.currentTarget;
-        var idAttr = target.attributes.id;
-        var value = idAttr.nodeValue;
+    IngredientsComponent.prototype.onAddFavorite = function (value) {
         console.log("Adding Item to Favorites : " + value);
+    };
+    IngredientsComponent.prototype.onHideDetails = function () {
+        this.showDetails = false;
+    };
+    IngredientsComponent.prototype.onDisplayDetails = function (product) {
+        console.log("Checking details of : " + product);
+        this.productCode = product.code;
+        this.productName = product.product_name;
+        this.productQuantity = product.quantity;
+        this.productBrands = product.brands;
+        this.productImageUrl = product.image_url;
+        this.productProteins100g = product.nutriments.proteins_100g;
+        this.productCarbohydrates100g = product.nutriments.carbohydrates_100g;
+        this.productFat100g = product.nutriments.fat_100g;
+        this.productEnergyValue = product.nutriments.energy_value;
+        this.productUrl = product.url;
+        this.showDetails = true;
+    };
+    IngredientsComponent.prototype.onNewPage = function (event) {
+        var _this = this;
+        console.log("scanning page : " + event.pageIndex);
+        this.openFoodFactsService.searchItems(this.name, event.pageIndex + 1, function (data) {
+            console.log(data);
+            _this.products = data.products;
+            _this.pageSize = data.page_size;
+            _this.currentPage = data.page;
+            _this.totalResults = data.count;
+        });
+    };
+    IngredientsComponent.prototype.onClearResults = function () {
+        this.products = null;
     };
     IngredientsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -416,7 +517,7 @@ var IngredientsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./ingredients.component.html */ "./src/app/ingredients/ingredients.component.html"),
             styles: [__webpack_require__(/*! ./ingredients.component.css */ "./src/app/ingredients/ingredients.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_2__["OpenFoodFactsService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_2__["OpenFoodFactsService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], IngredientsComponent);
     return IngredientsComponent;
 }());
@@ -669,8 +770,8 @@ var OpenFoodFactsService = /** @class */ (function () {
     function OpenFoodFactsService(http) {
         this.http = http;
     }
-    OpenFoodFactsService.prototype.searchItems = function (searchString, apiCallback) {
-        this.http.get('https://world.openfoodfacts.org/cgi/search.pl?search_simple=1&action=process&json=1&search_terms=' + searchString).subscribe(function (data) {
+    OpenFoodFactsService.prototype.searchItems = function (searchString, searchPage, apiCallback) {
+        this.http.get('https://world.openfoodfacts.org/cgi/search.pl?search_simple=1&action=process&json=1&page_size=18&search_terms=' + searchString + '&page=' + searchPage).subscribe(function (data) {
             apiCallback(data);
         });
     };
