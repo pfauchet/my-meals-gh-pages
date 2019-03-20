@@ -23,62 +23,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/administration/administration.component.css":
-/*!*************************************************************!*\
-  !*** ./src/app/administration/administration.component.css ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluaXN0cmF0aW9uL2FkbWluaXN0cmF0aW9uLmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/administration/administration.component.html":
-/*!**************************************************************!*\
-  !*** ./src/app/administration/administration.component.html ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  administration works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/administration/administration.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/administration/administration.component.ts ***!
-  \************************************************************/
-/*! exports provided: AdministrationComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdministrationComponent", function() { return AdministrationComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var AdministrationComponent = /** @class */ (function () {
-    function AdministrationComponent() {
-    }
-    AdministrationComponent.prototype.ngOnInit = function () {
-    };
-    AdministrationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-administration',
-            template: __webpack_require__(/*! ./administration.component.html */ "./src/app/administration/administration.component.html"),
-            styles: [__webpack_require__(/*! ./administration.component.css */ "./src/app/administration/administration.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], AdministrationComponent);
-    return AdministrationComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -92,15 +36,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _administration_administration_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./administration/administration.component */ "./src/app/administration/administration.component.ts");
-/* harmony import */ var _meals_meals_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./meals/meals.component */ "./src/app/meals/meals.component.ts");
-/* harmony import */ var _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./homepage/homepage.component */ "./src/app/homepage/homepage.component.ts");
-/* harmony import */ var _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ingredients/ingredients.component */ "./src/app/ingredients/ingredients.component.ts");
-/* harmony import */ var _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ingredients-details/ingredients-details.component */ "./src/app/ingredients-details/ingredients-details.component.ts");
-/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
-/* harmony import */ var _project_project_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./project/project.component */ "./src/app/project/project.component.ts");
-/* harmony import */ var _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./recipes/recipes.component */ "./src/app/recipes/recipes.component.ts");
-/* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+/* harmony import */ var _meals_meals_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./meals/meals.component */ "./src/app/meals/meals.component.ts");
+/* harmony import */ var _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./homepage/homepage.component */ "./src/app/homepage/homepage.component.ts");
+/* harmony import */ var _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ingredients/ingredients.component */ "./src/app/ingredients/ingredients.component.ts");
+/* harmony import */ var _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ingredients-details/ingredients-details.component */ "./src/app/ingredients-details/ingredients-details.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
+/* harmony import */ var _project_project_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./project/project.component */ "./src/app/project/project.component.ts");
+/* harmony import */ var _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./recipes/recipes.component */ "./src/app/recipes/recipes.component.ts");
+/* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/auth-guard.service */ "./src/app/services/auth-guard.service.ts");
 
 
 
@@ -114,15 +58,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: 'administration', component: _administration_administration_component__WEBPACK_IMPORTED_MODULE_3__["AdministrationComponent"] },
-    { path: 'home', component: _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__["HomepageComponent"] },
-    { path: 'ingredients', component: _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_6__["IngredientsComponent"] },
-    { path: 'ingredients/:id', component: _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_7__["IngredientsDetailsComponent"] },
-    { path: 'meals', component: _meals_meals_component__WEBPACK_IMPORTED_MODULE_4__["MealsComponent"] },
-    { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_8__["ProfileComponent"] },
-    { path: 'project', component: _project_project_component__WEBPACK_IMPORTED_MODULE_9__["ProjectComponent"] },
-    { path: 'recipes', component: _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_10__["RecipesComponent"] },
-    { path: 'signin', component: _signin_signin_component__WEBPACK_IMPORTED_MODULE_11__["SigninComponent"] },
+    { path: 'home', canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_11__["AuthGuardService"]], component: _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_4__["HomepageComponent"] },
+    { path: 'ingredients', component: _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_5__["IngredientsComponent"] },
+    { path: 'ingredients/:id', component: _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_6__["IngredientsDetailsComponent"] },
+    { path: 'meals', component: _meals_meals_component__WEBPACK_IMPORTED_MODULE_3__["MealsComponent"] },
+    { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_7__["ProfileComponent"] },
+    { path: 'project', component: _project_project_component__WEBPACK_IMPORTED_MODULE_8__["ProjectComponent"] },
+    { path: 'recipes', component: _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_9__["RecipesComponent"] },
+    { path: 'signin', component: _signin_signin_component__WEBPACK_IMPORTED_MODULE_10__["SigninComponent"] },
+    { path: 'login', redirectTo: 'signin' },
     { path: '**', redirectTo: 'home' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -159,7 +103,7 @@ module.exports = ".sidenav-container {\r\n    position: absolute;\r\n    top: 0;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav #sidenav mode=\"over\" [(opened)]=\"opened\" >\n    <span><img src=\"assets/images/mac_one.png\" class=\"macone-logo\" (click)=\"opened = !opened\"/></span>\n    <div class=\"menu-row\" (click)=\"opened = !opened\">\n      <a mat-button routerLink=\"/news\">\n        <mat-icon>info</mat-icon>&nbsp;Home Page</a>\n      <a mat-button routerLink=\"/ingredients\">\n        <mat-icon>room_service</mat-icon>&nbsp;My Ingredients</a>\n      <a mat-button routerLink=\"/recipes\">\n        <mat-icon>cake</mat-icon>&nbsp;My Recipes</a>        \n      <a mat-button routerLink=\"/meals\">\n        <mat-icon>calendar_today</mat-icon>&nbsp;My Meals</a>\n      <a mat-button routerLink=\"/profile\">\n        <mat-icon>perm_identity</mat-icon>&nbsp;My Profile</a>\n      <a mat-button routerLink=\"/project\">\n        <mat-icon>explore</mat-icon>&nbsp;The Project</a>        \n      <a mat-button routerLink=\"/administration\">\n        <mat-icon>settings</mat-icon>&nbsp;Administration</a>\n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"accent\">\n      <mat-toolbar-row>\n        <button mat-icon-button (click)=\"opened = !opened\"><mat-icon>menu</mat-icon></button>\n        <span><img src=\"assets/images/my-meals-logo.png\" class=\"logo\"/></span><span>My Meals Application</span>\n        <a class=\"auth-button\" routerLinkActive=\"active\" *ngIf=\"!isAuthenticated\" routerLink=\"signin\">Login</a>\n        <a class=\"auth-button\" (click)=\"onSignOut()\" style=\"cursor:pointer;\" *ngIf=\"isAuthenticated\">Logout</a>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <router-outlet></router-outlet>\n  </mat-sidenav-content>\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav #sidenav mode=\"over\" [(opened)]=\"opened\" >\n    <span><img src=\"assets/images/mac_one.png\" class=\"macone-logo\" (click)=\"opened = !opened\"/></span>\n    <div class=\"menu-row\" (click)=\"opened = !opened\">\n      <a mat-button routerLink=\"/news\">\n        <mat-icon>info</mat-icon>&nbsp;Home Page</a>\n      <a mat-button routerLink=\"/ingredients\">\n        <mat-icon>room_service</mat-icon>&nbsp;My Ingredients</a>\n      <a mat-button routerLink=\"/recipes\">\n        <mat-icon>cake</mat-icon>&nbsp;My Recipes</a>        \n      <a mat-button routerLink=\"/meals\">\n        <mat-icon>calendar_today</mat-icon>&nbsp;My Meals</a>\n      <a mat-button routerLink=\"/profile\">\n        <mat-icon>perm_identity</mat-icon>&nbsp;My Profile</a>\n      <a mat-button routerLink=\"/project\">\n        <mat-icon>explore</mat-icon>&nbsp;The Project</a>        \n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"accent\">\n      <mat-toolbar-row>\n        <button mat-icon-button (click)=\"opened = !opened\"><mat-icon>menu</mat-icon></button>\n        <span><img src=\"assets/images/my-meals-logo.png\" class=\"logo\"/></span><span>My Meals Application</span>\n        <a class=\"auth-button\" routerLinkActive=\"active\" *ngIf=\"!isAuthenticated\" routerLink=\"signin\">Login</a>\n        <a class=\"auth-button\" (click)=\"onSignOut()\" style=\"cursor:pointer;\" *ngIf=\"isAuthenticated\">Logout</a>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <router-outlet></router-outlet>\n  </mat-sidenav-content>\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -176,19 +120,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _services_user_login_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/user-login.service */ "./src/app/services/user-login.service.ts");
+
+
 
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent(router) {
+    function AppComponent(authService, userLoginService, router) {
+        this.authService = authService;
+        this.userLoginService = userLoginService;
         this.router = router;
         this.shouldRun = true;
         this.opened = false;
         console.log("AppComponent: constructor");
     }
     AppComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // We subscribe to a subject which allows us to get the current user's authentication status
+        this.authStatusSub = this.authService.authStatusSubject.subscribe(function (authStatus) {
+            _this.isAuthenticated = authStatus;
+        });
+        this.userLoginService.isAuthenticated({
+            onSuccess: function () {
+                console.log("User is authenticated");
+            },
+            onFailure: function () {
+                console.log("User is not authenticated");
+            }
+        });
     };
     AppComponent.prototype.ngOnDestroy = function () {
+        this.authStatusSub.unsubscribe();
+    };
+    AppComponent.prototype.onSignOut = function () {
+        this.userLoginService.logout();
+        this.router.navigate(['/signin']);
     };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -196,7 +164,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"], _services_user_login_service__WEBPACK_IMPORTED_MODULE_4__["UserLoginService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -227,14 +195,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./homepage/homepage.component */ "./src/app/homepage/homepage.component.ts");
 /* harmony import */ var _project_project_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./project/project.component */ "./src/app/project/project.component.ts");
 /* harmony import */ var _meals_meals_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./meals/meals.component */ "./src/app/meals/meals.component.ts");
-/* harmony import */ var _administration_administration_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./administration/administration.component */ "./src/app/administration/administration.component.ts");
-/* harmony import */ var _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ingredients/ingredients.component */ "./src/app/ingredients/ingredients.component.ts");
-/* harmony import */ var _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./recipes/recipes.component */ "./src/app/recipes/recipes.component.ts");
-/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
-/* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
-/* harmony import */ var _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/open-food-facts.service */ "./src/app/services/open-food-facts.service.ts");
-/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ingredients-details/ingredients-details.component */ "./src/app/ingredients-details/ingredients-details.component.ts");
+/* harmony import */ var _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ingredients/ingredients.component */ "./src/app/ingredients/ingredients.component.ts");
+/* harmony import */ var _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./recipes/recipes.component */ "./src/app/recipes/recipes.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
+/* harmony import */ var _signin_signin_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./signin/signin.component */ "./src/app/signin/signin.component.ts");
+/* harmony import */ var _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/open-food-facts.service */ "./src/app/services/open-food-facts.service.ts");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./ingredients-details/ingredients-details.component */ "./src/app/ingredients-details/ingredients-details.component.ts");
+/* harmony import */ var _services_user_login_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/user-login.service */ "./src/app/services/user-login.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _services_cognito_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/cognito.service */ "./src/app/services/cognito.service.ts");
+/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./services/auth-guard.service */ "./src/app/services/auth-guard.service.ts");
+
+
+
 
 
 
@@ -265,19 +239,18 @@ var AppModule = /** @class */ (function () {
                 _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_9__["HomepageComponent"],
                 _project_project_component__WEBPACK_IMPORTED_MODULE_10__["ProjectComponent"],
                 _meals_meals_component__WEBPACK_IMPORTED_MODULE_11__["MealsComponent"],
-                _administration_administration_component__WEBPACK_IMPORTED_MODULE_12__["AdministrationComponent"],
-                _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_13__["IngredientsComponent"],
-                _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_14__["RecipesComponent"],
-                _profile_profile_component__WEBPACK_IMPORTED_MODULE_15__["ProfileComponent"],
-                _signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"],
-                _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_19__["IngredientsDetailsComponent"]
+                _ingredients_ingredients_component__WEBPACK_IMPORTED_MODULE_12__["IngredientsComponent"],
+                _recipes_recipes_component__WEBPACK_IMPORTED_MODULE_13__["RecipesComponent"],
+                _profile_profile_component__WEBPACK_IMPORTED_MODULE_14__["ProfileComponent"],
+                _signin_signin_component__WEBPACK_IMPORTED_MODULE_15__["SigninComponent"],
+                _ingredients_details_ingredients_details_component__WEBPACK_IMPORTED_MODULE_18__["IngredientsDetailsComponent"]
             ],
             imports: [
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
-                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_18__["FlexLayoutModule"],
+                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_17__["FlexLayoutModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCheckboxModule"],
@@ -293,7 +266,11 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatPaginatorModule"]
             ],
             providers: [
-                _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_17__["OpenFoodFactsService"]
+                _services_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"],
+                _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_22__["AuthGuardService"],
+                _services_open_food_facts_service__WEBPACK_IMPORTED_MODULE_16__["OpenFoodFactsService"],
+                _services_cognito_service__WEBPACK_IMPORTED_MODULE_21__["CognitoUtil"],
+                _services_user_login_service__WEBPACK_IMPORTED_MODULE_19__["UserLoginService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         })
@@ -750,6 +727,230 @@ var RecipesComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/auth-guard.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/auth-guard.service.ts ***!
+  \************************************************/
+/*! exports provided: AuthGuardService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuardService", function() { return AuthGuardService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth.service */ "./src/app/services/auth.service.ts");
+
+
+
+
+var AuthGuardService = /** @class */ (function () {
+    function AuthGuardService(router, authService) {
+        this.router = router;
+        this.authService = authService;
+    }
+    AuthGuardService.prototype.canActivate = function (route) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            if (_this.authService.authStatus) {
+                resolve(true);
+            }
+            else {
+                _this.router.navigate(['/signin'], { queryParams: { redirect_uri: route.url.toString() } });
+                resolve(false);
+            }
+        });
+    };
+    AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"]])
+    ], AuthGuardService);
+    return AuthGuardService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/auth.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/services/auth.service.ts ***!
+  \******************************************/
+/*! exports provided: AuthService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+
+
+
+var AuthService = /** @class */ (function () {
+    function AuthService() {
+        this.authStatusSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+        this.authStatus = false;
+    }
+    AuthService.prototype.emitAuthStatusSubject = function () {
+        console.log("New Auth Status : " + this.authStatus);
+        this.authStatusSubject.next(this.authStatus);
+    };
+    AuthService.prototype.setAuthStatusToTrue = function () {
+        this.authStatus = true;
+        this.emitAuthStatusSubject();
+    };
+    AuthService.prototype.setAuthStatusToFalse = function () {
+        this.authStatus = false;
+        this.emitAuthStatusSubject();
+    };
+    AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], AuthService);
+    return AuthService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/cognito.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/cognito.service.ts ***!
+  \*********************************************/
+/*! exports provided: CognitoUtil */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CognitoUtil", function() { return CognitoUtil; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var amazon_cognito_identity_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! amazon-cognito-identity-js */ "./node_modules/amazon-cognito-identity-js/es/index.js");
+
+
+
+
+var CognitoUtil = /** @class */ (function () {
+    function CognitoUtil() {
+    }
+    CognitoUtil_1 = CognitoUtil;
+    CognitoUtil.prototype.getUserPool = function () {
+        return new amazon_cognito_identity_js__WEBPACK_IMPORTED_MODULE_3__["CognitoUserPool"](CognitoUtil_1._POOL_DATA);
+    };
+    CognitoUtil.prototype.getCurrentUser = function () {
+        return this.getUserPool().getCurrentUser();
+    };
+    CognitoUtil.prototype.getAccessToken = function (callback) {
+        if (callback == null) {
+            throw ("CognitoUtil: callback in getAccessToken is null...returning");
+        }
+        if (this.getCurrentUser() != null) {
+            this.getCurrentUser().getSession(function (err, session) {
+                if (err) {
+                    console.log("CognitoUtil: Can't get session:" + err);
+                    callback(null, "Can't get session");
+                }
+                else {
+                    if (session.isValid()) {
+                        callback(session.getAccessToken().getJwtToken(), null);
+                    }
+                    else {
+                        console.log("CognitoUtil: Session is invalid");
+                        callback(null, "Session is invalid");
+                    }
+                }
+            });
+        }
+        else {
+            console.log(" CognitoUtil: Can't get current user");
+            callback(null, "Can't get current user");
+        }
+    };
+    CognitoUtil.prototype.getIdToken = function (callback) {
+        if (callback == null) {
+            throw ("CognitoUtil: callback in getIdToken is null...returning");
+        }
+        if (this.getCurrentUser() != null)
+            this.getCurrentUser().getSession(function (err, session) {
+                if (err) {
+                    console.log("CognitoUtil: Can't get session:" + err);
+                    callback(null, "Can't get session");
+                }
+                else {
+                    if (session.isValid()) {
+                        callback(session.getIdToken().getJwtToken(), null);
+                    }
+                    else {
+                        console.log("CognitoUtil: Session is invalid");
+                        callback(null, "Session is invalid");
+                    }
+                }
+            });
+        else
+            console.log(" CognitoUtil: Can't get current user");
+        callback(null, "Can't get current user");
+    };
+    CognitoUtil.prototype.getRefreshToken = function (callback) {
+        if (callback == null) {
+            throw ("CognitoUtil: callback in getRefreshToken is null...returning");
+        }
+        if (this.getCurrentUser() != null)
+            this.getCurrentUser().getSession(function (err, session) {
+                if (err) {
+                    console.log("CognitoUtil: Can't get session:" + err);
+                    callback(null, "Can't get session");
+                }
+                else {
+                    if (session.isValid()) {
+                        callback(session.getRefreshToken());
+                    }
+                    else {
+                        console.log("CognitoUtil: Session is invalid");
+                        callback(null, "Session is invalid");
+                    }
+                }
+            });
+        else
+            console.log(" CognitoUtil: Can't get current user");
+        callback(null, "Can't get current user");
+    };
+    CognitoUtil.prototype.refresh = function () {
+        this.getCurrentUser().getSession(function (err, session) {
+            if (err) {
+                console.log("CognitoUtil: Can't get session:" + err);
+            }
+            else {
+                if (session.isValid()) {
+                    console.log("CognitoUtil: refreshed successfully");
+                }
+                else {
+                    console.log("CognitoUtil: refreshed but session is still not valid");
+                }
+            }
+        });
+    };
+    var CognitoUtil_1;
+    CognitoUtil._REGION = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].region;
+    CognitoUtil._USER_POOL_ID = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].userPoolId;
+    CognitoUtil._CLIENT_ID = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].clientId;
+    CognitoUtil._POOL_DATA = {
+        UserPoolId: CognitoUtil_1._USER_POOL_ID,
+        ClientId: CognitoUtil_1._CLIENT_ID
+    };
+    CognitoUtil = CognitoUtil_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], CognitoUtil);
+    return CognitoUtil;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/open-food-facts.service.ts":
 /*!*****************************************************!*\
   !*** ./src/app/services/open-food-facts.service.ts ***!
@@ -788,6 +989,124 @@ var OpenFoodFactsService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/user-login.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/user-login.service.ts ***!
+  \************************************************/
+/*! exports provided: UserLoginService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserLoginService", function() { return UserLoginService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _cognito_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cognito.service */ "./src/app/services/cognito.service.ts");
+/* harmony import */ var amazon_cognito_identity_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! amazon-cognito-identity-js */ "./node_modules/amazon-cognito-identity-js/es/index.js");
+
+
+
+
+
+var UserLoginService = /** @class */ (function () {
+    function UserLoginService(authService, cognitoUtil) {
+        this.authService = authService;
+        this.cognitoUtil = cognitoUtil;
+    }
+    UserLoginService.prototype.isAuthenticated = function (callback) {
+        if (callback == null)
+            throw ("UserLoginService: Callback in isAuthenticated() cannot be null");
+        var cognitoUser = this.cognitoUtil.getCurrentUser();
+        var myThis = this;
+        if (cognitoUser != null) {
+            cognitoUser.getSession(function (err, session) {
+                if (err) {
+                    console.log("UserLoginService: can't retrieve the current user: " + err);
+                    myThis.authService.setAuthStatusToFalse();
+                    callback.onFailure("Can't get session");
+                }
+                else {
+                    if (session.isValid()) {
+                        myThis.authService.setAuthStatusToTrue();
+                        callback.onSuccess();
+                    }
+                    else {
+                        myThis.authService.setAuthStatusToFalse();
+                        callback.onFailure("Session is invalid");
+                    }
+                }
+            });
+        }
+        else {
+            console.log("UserLoginService: can't retrieve the current user");
+            myThis.authService.setAuthStatusToFalse();
+            callback.onFailure("Can't get current user");
+        }
+    };
+    UserLoginService.prototype.authenticate = function (username, password, callback) {
+        var _this = this;
+        console.log("UserLoginService: starting the authentication");
+        if (callback == null)
+            throw ("UserLoginService: Callback in isAuthenticated() cannot be null");
+        var authenticationData = {
+            Username: username,
+            Password: password,
+        };
+        var authenticationDetails = new amazon_cognito_identity_js__WEBPACK_IMPORTED_MODULE_4__["AuthenticationDetails"](authenticationData);
+        var userData = {
+            Username: username,
+            Pool: this.cognitoUtil.getUserPool()
+        };
+        console.log("UserLoginService: Params set...Authenticating the user");
+        this.cognitoUser = new amazon_cognito_identity_js__WEBPACK_IMPORTED_MODULE_4__["CognitoUser"](userData);
+        this.cognitoUser.authenticateUser(authenticationDetails, {
+            onSuccess: function (session, userConfirmationNecessary) {
+                _this.authService.setAuthStatusToTrue();
+                callback.onSuccess(userConfirmationNecessary);
+            },
+            onFailure: function (err) {
+                callback.onFailure(err.message);
+            },
+            newPasswordRequired: function (userAttributes, requiredAttributes) {
+                callback.newPasswordRequired(userAttributes, requiredAttributes);
+            }
+        });
+    };
+    UserLoginService.prototype.confirmNewPassword = function (email, password, callback) {
+        if (password != null) {
+            this.cognitoUser.completeNewPasswordChallenge(password, null, {
+                onSuccess: function () {
+                    callback.onSuccess();
+                },
+                onFailure: function (err) {
+                    console.log(err);
+                    callback.onFailure(err.message);
+                }
+            });
+        }
+        else {
+            callback.onFailure("New password missing");
+        }
+    };
+    UserLoginService.prototype.logout = function () {
+        console.log("UserLoginService: Logging out");
+        if (this.cognitoUtil.getCurrentUser() != null)
+            this.cognitoUtil.getCurrentUser().signOut();
+        this.authService.setAuthStatusToFalse();
+        localStorage.clear();
+    };
+    UserLoginService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], _cognito_service__WEBPACK_IMPORTED_MODULE_3__["CognitoUtil"]])
+    ], UserLoginService);
+    return UserLoginService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/signin/signin.component.css":
 /*!*********************************************!*\
   !*** ./src/app/signin/signin.component.css ***!
@@ -795,7 +1114,7 @@ var OpenFoodFactsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NpZ25pbi9zaWduaW4uY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".login-form {\r\n    margin: auto;\r\n    width: 95%;\r\n}\r\n\r\nh1 {\r\n    width: 95%;\r\n    margin: auto;\r\n    margin-top : 10px;\r\n    margin-bottom: 10px;\r\n    font-family: Noto, \"Helvetica Neue\", sans-serif;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2lnbmluL3NpZ25pbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLFVBQVU7QUFDZDs7QUFFQTtJQUNJLFVBQVU7SUFDVixZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQiwrQ0FBK0M7QUFDbkQiLCJmaWxlIjoic3JjL2FwcC9zaWduaW4vc2lnbmluLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9naW4tZm9ybSB7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICB3aWR0aDogOTUlO1xyXG59XHJcblxyXG5oMSB7XHJcbiAgICB3aWR0aDogOTUlO1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgbWFyZ2luLXRvcCA6IDEwcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IE5vdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -806,7 +1125,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  signin works!\n</p>\n"
+module.exports = "<h1>Login</h1>\n\n<div *ngIf=\"errorMessage!=null\" class=\"alert alert-danger\">\n    {{ errorMessage }}\n</div>\n\n<div class='page-element' *ngIf=\"!isNewPasswordRequired\">\n    <mat-card class=\"login-form\">\n        <form role=\"form\">\n            <mat-list>\n                <mat-list-item>\n                  <mat-icon mat-list-icon>person</mat-icon>\n                  <p mat-line> Email </p>\n                  <p mat-line>\n                    <mat-form-field>\n                      <input matInput id=\"signupEmail\" required type=\"email\" maxlength=\"100\" class=\"form-control\" [(ngModel)]=\"email\" [ngModelOptions]=\"{standalone: true}\">\n                    </mat-form-field>\n                  </p>\n                </mat-list-item>\n                <mat-list-item>\n                  <mat-icon mat-list-icon>vpn_key</mat-icon>\n                  <p mat-line> Password </p>\n                  <p mat-line>\n                    <mat-form-field>\n                        <input matInput id=\"signupPassword\" required type=\"password\" maxlength=\"25\" class=\"form-control\" length=\"40\" [(ngModel)]=\"password\" [ngModelOptions]=\"{standalone: true}\">\n                    </mat-form-field>\n                  </p>\n                </mat-list-item>\n                <mat-list-item>\n                  <p mat-line>\n                    <button mat-raised-button color=\"primary\" (click)=\"onLogin()\" id=\"signupSubmit\" type=\"submit\" class=\"btn btn-info btn-block\">Login</button>\n                    \n                        <button mat-flat-button color=\"white\" (click)=\"onResetPassword()\" class=\"btn btn-info btn-block\">Forgot your password ?</button>\n                    </p>\n\n                </mat-list-item>\n                <mat-list-item>\n                  \n                </mat-list-item>\n            </mat-list>\n        </form>\n    </mat-card>\n</div>\n\n<div class='page-element' *ngIf=\"isNewPasswordRequired\">\n    <mat-card class=\"login-form\">\n        <form role=\"form\">\n            <mat-list>\n                <mat-list-item>\n                  <mat-icon mat-list-icon>vpn_key</mat-icon>\n                  <p mat-line> New password </p>\n                  <p mat-line>\n                    <mat-form-field>\n                      <input matInput id=\"newPassword\" required type=\"password\" maxlength=\"25\" class=\"form-control\" length=\"40\" [(ngModel)]=\"newPassword\" [ngModelOptions]=\"{standalone: true}\">\n                    </mat-form-field>\n                  </p>\n                </mat-list-item>\n            </mat-list>\n            <mat-list>\n                <mat-list-item>\n                  <mat-icon mat-list-icon>vpn_key</mat-icon>\n                  <p mat-line> Confirm </p>\n                  <p mat-line>\n                    <mat-form-field>\n                      <input matInput id=\"newPasswordConfirmation\" required type=\"password\" maxlength=\"25\" class=\"form-control\" length=\"40\" [(ngModel)]=\"newPasswordConfirmation\" [ngModelOptions]=\"{standalone: true}\">\n                    </mat-form-field>\n                  </p>\n                </mat-list-item>\n                <mat-list-item>\n                    <button mat-raised-button color=\"primary\" (click)=\"onSetNewPassword()\" id=\"newPasswordSubmit\" type=\"submit\" class=\"btn btn-info btn-block\">Validate</button>\n                </mat-list-item>\n            </mat-list>\n        </form>\n    </mat-card>\n</div>"
 
 /***/ }),
 
@@ -822,20 +1141,86 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SigninComponent", function() { return SigninComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_user_login_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user-login.service */ "./src/app/services/user-login.service.ts");
+
+
 
 
 var SigninComponent = /** @class */ (function () {
-    function SigninComponent() {
+    function SigninComponent(router, userService, route) {
+        this.router = router;
+        this.userService = userService;
+        this.route = route;
+        console.log("LoginComponent constructor");
     }
     SigninComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route
+            .queryParams
+            .subscribe(function (params) {
+            _this.redirectUri = params['redirect_uri'];
+        });
+        this.errorMessage = null;
+        console.log("Checking if the user is already authenticated.");
+        var myThis = this;
+        this.userService.isAuthenticated({
+            onSuccess: function () {
+                console.log("User is already logged in: redirecting !");
+                if (this.redirectUri != null) {
+                    myThis.router.navigate([myThis.redirectUri]);
+                }
+                else
+                    myThis.router.navigate(['/home']);
+            },
+            onFailure: function (message) {
+                console.log('User is not logged in: ' + message);
+            }
+        });
     };
+    SigninComponent.prototype.onLogin = function () {
+        var myThis = this;
+        if (this.email == null || this.password == null) {
+            this.errorMessage = "All fields are required";
+            return;
+        }
+        this.errorMessage = null;
+        this.userService.authenticate(this.email, this.password, {
+            onSuccess: function (userConfirmationNecessary) {
+                console.log("Authentication success: redirecting. Confirm = " + userConfirmationNecessary);
+                if (this.redirectUri != null) {
+                    myThis.router.navigate([myThis.redirectUri]);
+                }
+                else
+                    myThis.router.navigate(['/home']);
+            },
+            onFailure: function (message) {
+                console.log(message);
+                myThis.errorMessage = message;
+            },
+            newPasswordRequired: function (userAttributes, requiredAttributes) {
+                console.log(userAttributes);
+                console.log(requiredAttributes);
+                var newPassword = prompt('Enter new password ', '');
+                myThis.userService.confirmNewPassword(myThis.email, newPassword, {
+                    onSuccess: function () {
+                        console.log("Change Password Success");
+                    },
+                    onFailure: function (message) {
+                        console.log("Can't change password: " + message);
+                    }
+                });
+            }
+        });
+    };
+    ;
     SigninComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-signin',
             template: __webpack_require__(/*! ./signin.component.html */ "./src/app/signin/signin.component.html"),
             styles: [__webpack_require__(/*! ./signin.component.css */ "./src/app/signin/signin.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _services_user_login_service__WEBPACK_IMPORTED_MODULE_3__["UserLoginService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
     ], SigninComponent);
     return SigninComponent;
 }());
@@ -858,7 +1243,10 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    region: 'eu-west-2',
+    userPoolId: 'eu-west-2_0dy993zyt',
+    clientId: 'ps09b0aiko5bkhpvj1a7eb3q2'
 };
 /*
  * For easier debugging in development mode, you can import the following file
